@@ -1,7 +1,7 @@
 # Spod
  A poorly written Spotify playlist downloader
 
-## usage
+## Usage
 ```bash
 spod <playlist id> <download directory> <file extension>
 ```
@@ -10,6 +10,25 @@ for example:
 spod 0Ao9ZoGttBb7TUrieOKg1L ~/Music mp3
 ```
 
-## installation
- after cloning the repo go to the Spod directory and run `npm install` and after that's done run `npm i -g` (note: you might have to use sudo if you're on linux)
- once the installation is done you'll need to create a [spotify app](https://developer.spotify.com/dashboard) and copy the client id and secret from it. after that create a file called `.env` in the Spod directory and copy the contents of `.env.template` into it then paste the id and secret you got the from app into the 2 fields in `.env`
+## Installation
+### Clone the repo
+ ```bash
+ git clone https://github.com/posaidon09/spod
+ ```
+### Install the packages
+ ```bash
+ npm install
+ ```
+### Setup the CLI (you may have to use sudo if you're on linux)
+ ```bash
+ npm i -g
+ ```
+### Create a [spotify app](https://developer.spotify.com/dashboard) 
+make sure to select `Web API` in the creation options. after that go the app's settings and copy the Client ID and Secret
+
+### Create env file
+after you copy the Client ID and Secret go back to the spod folder and create a file named `.env` and type this in it
+```env
+SPOTIFY_ID=# your app id
+SPOTIFY_SECRET=# your app secret
+```
