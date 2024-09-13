@@ -1,0 +1,26 @@
+{
+  "name": "spod",
+  "version": "1.0.0",
+  "description": "Spotify playlist downloader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "posaidon",
+  "license": "ISC",
+  "dependencies": {
+    "@distube/ytdl-core": "^4.14.4",
+    "axios": "^1.7.3",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "ffmetadata": "^1.7.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "qs": "^6.13.0",
+    "yt-search": "^2.11.1"
+  },
+  "bin": {
+    "spod": "index.js"
+  }
+}
